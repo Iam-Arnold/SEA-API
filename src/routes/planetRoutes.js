@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const planetController = require('../controllers/planetController'); // Ensure the path is correct
+const planetController = require('../controllers/planetController'); 
 
-// Define the route for fetching confirmed planets
+
 router.get('/', planetController.getConfirmedPlanets);
 
-module.exports = router; // Export the router
+module.exports = router; 

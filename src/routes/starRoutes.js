@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const starController = require('../controllers/starsController'); // Ensure the path is correct
+const starController = require('../controllers/starsController'); 
 
-// Define the route for fetching stars
+
 router.get('/', starController.getStars);
 
-module.exports = router; // Export the router
+module.exports = router; 

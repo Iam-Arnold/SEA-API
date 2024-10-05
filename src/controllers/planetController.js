@@ -1,12 +1,12 @@
 const planetService = require('../services/planetService');
 
-const getConfirmedPlanets = async (req, res) => { // Include req and res
+const getConfirmedPlanets = async (req, res) => {
     try {
-        const planets = await planetService.fetchConfirmedPlanets(); // Fetch planets
-        res.status(200).json(planets); // Send the planets data as a JSON response
+        const planets = await planetService.fetchConfirmedPlanets(); 
+        res.status(200).json(planets); 
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: error.message }); // Send the error message
+        res.status(500).json({ message: error.message }); 
     }
 };
 

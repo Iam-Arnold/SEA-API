@@ -4,7 +4,7 @@ const config = require('../config');
 const fetchStars = async () => {
     try {
         const response = await axios.get(config.starsAPI);
-        return response.data; // Return the data directly
+        return response.data; 
     } catch (error) {
         throw new Error('Error fetching stars: ' + error.message);
     }
